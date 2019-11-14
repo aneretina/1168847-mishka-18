@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -20,73 +21,77 @@
         </nav>
     </header>
     <main>
-        <h1 class="main-title">Милые штуки ручной работы для дома</h1>
-        <div class="submenu">
-            <li class="submenu-list">
-                <a class="sumenu__link" href="#">Предметы интерьера</a>
+      <section class="handwork">
+        <h1 class="handwork__title">Милые штуки ручной работы для дома</h1>
+        <div class="handwork__menu">
+            <li class="handwork__list">
+                <a class="handwork__subtitle" href="#">Предметы интерьера</a>
             </li>
-            <li class="submenu-list">
-                <a class="submenu__link" href="#">Детские игрушки</a>
+            <li class="handwork__list">
+                <a class="handwork__subtitle" href="#">Детские игрушки</a>
             </li>
         </div>
+          </section>
         <section class="hit">
             <h2 class="hit__title">Вязаные корзинки</h2>
-            <p>ТОВАР НЕДЕЛИ</p>
-            <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
-            <table>
+            <p class="hit__subtitle">ТОВАР НЕДЕЛИ</p>
+            <p class="hit__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+            <table class="hit__table">
                 <tr>
                     <th>Цвет:</th>
-                    <th>Диаметр:</th>
-                    <th>Высота:</th>
+                    <td>«Тиффани»/серый</td>
                 </tr>
                 <tr>
-                    <td>«Тиффани»/серый</td>
+                    <th>Диаметр:</th>
                     <td>25 см</td>
+                </tr>
+                <tr>
+                    <th>Высота:</th>
                     <td>15 см</td>
                 </tr>
             </table>
             <a href="#"><img src="#" width="260px" height="315px"></a>
-            <p>Цена: 990 руб.</p>
-            <a href="#">ЗАКАЗАТЬ</a>
+            <p class="hit__price">Цена: 990 руб.</p>
+            <a class="hit__order-btn" href="#">ЗАКАЗАТЬ</a>
         </section>
-        <section class="company-information">
-            <h2 class="company-information__title">Коротко о нас:</h2>
-            <ul class="company-information__list">
-                <li class="company-information__feature">Экологически чистые материалы</li>
-                <li class="company-information__feature">Скандинавский стиль по российской цене</li>
-                <li class="company-information__feature">Увеличивает лайки на фотографиях</li>
-                <li class="company-information__feature">Связано вручную с любовью и умилением</li>
-                <li class="company-information__feature">Поддержка отечественного производителя</li>
-                <li class="company-information__feature">Поставляется в подарочной упаковке</li>
+        <section class="company-info">
+            <h2 class="company-info__title">Коротко о нас:</h2>
+            <ul class="company-info__list">
+                <li class="company-info__feature">Экологически чистые материалы</li>
+                <li class="company-info__feature">Скандинавский стиль по российской цене</li>
+                <li class="company-info__feature">Увеличивает лайки на фотографиях</li>
+                <li class="company-info__feature">Связано вручную с любовью и умилением</li>
+                <li class="company-info__feature">Поддержка отечественного производителя</li>
+                <li class="company-info__feature">Поставляется в подарочной упаковке</li>
             </ul>
         </section>
         <section class="feedback">
             <div class="feedback-unit">
             <h2 class="feedback__title">Отзывы</h2>
             <p class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-            <p class="feedbakc__user-name">Анастасия Красильникова</p>
-            <p class="feedbakc__user-email">@misssssiskras</p>
+            <p class="feedback__user-name">Анастасия Красильникова</p>
+            <p class="feedback__user-email">@misssssiskras</p>
           </div>
             <button class="feedback__button-left" type="button" name="button"></button>
             <button class="feedback__button-right" type="button" name="button"></button>
             <a class="feedback__button" href="#">Написать </a>
         </section>
         <section class="contact">
-            <h2 class="contact-title">Контакты</h2>
-            <table class="contact__info">
+            <h2 class="contact__title">Контакты</h2>
+            <table class="contact__table">
                 <tr class="contact__email">
-                    <th>e-mail:</th>
+                    <td>e-mail:</td>
                     <td>info@mimimishkashop.ru</td>
                 </tr>
                 <tr class="contact_address">
-                    <th>адрес:</th>
+                    <td>адрес:</td>
                     <td>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
                 </tr>
             </table>
             <img src="#" width="322" height="457" alt="Карта">
         </section>
     </main>
-    <footer>
+    <footer class="main-footer">
         <div class="social-media">
             <ul class="social-media__list">
                 <li class="social-media__item">
