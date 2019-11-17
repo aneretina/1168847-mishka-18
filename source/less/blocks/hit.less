@@ -29,6 +29,7 @@
 
 .hit__table tr {
   text-align: left;
+  border-bottom: 1px solid @bg-lightgrey;
 }
 
 .hit__price {
@@ -47,4 +48,38 @@
   width: 259px;
   border: solid 2px #444444;
   background-color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .hit__title {
+    text-align: left;
+  }
+
+  .hit__subtitle {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .hit__image {
+    float: right;
+    margin-top: -113px;
+    margin-right: 114px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hit__title {
+    text-align: left;
+  }
+
+  .hit__subtitle {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .hit__image {
+    float: right;
+    margin-top: -90px;
+    margin-right: 100px;
+  }
 }
