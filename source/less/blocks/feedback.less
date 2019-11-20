@@ -26,7 +26,25 @@
   color: #444444;
 }
 
+.feedback__slider {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feedback__button-left {
+  border: solid 1px #ececec;
+  width: 130px;
+  height: 52px;
+}
+
+.feedback__button-right {
+  border: solid 1px #ececec;
+  width: 130px;
+  height: 52px;
+}
+
 .feedback__button {
+  display: block;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
@@ -35,4 +53,86 @@
   height: 52px;
   border: solid 2px #444444;
   background-color: #ffffff;
+  margin-top: 38px;
+}
+
+@media (min-width: @tablet-width) {
+  .feedback {
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 457px;
+  }
+
+  .feedback__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-left: 42px;
+    padding-top: 50px;
+  }
+
+  .feedback__text {
+    font-size: 17px;
+    line-height: 30px;
+    width: 642px;
+    margin-left: 51px;
+    padding: 0;
+  }
+
+  .feedback__user-name,
+  .feedback__user-email {
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 48px;
+  }
+
+  .feedback__button {
+    font-size: 17px;
+    line-height: 20px;
+    width: 175px;
+    height: 52px;
+    text-align: center;
+    margin-top: -350px;
+    margin-left: 300px;
+  }
+
+  .feedback__slider {
+    display: flex;
+    margin-right: auto;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .feedback__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-left: 42px;
+    padding-top: 50px;
+  }
+
+  .feedback__text {
+    width: 768px;
+    margin-left: 51px;
+    padding: 0;
+  }
+
+  .feedback__user-name,
+  .feedback__user-email {
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 48px;
+  }
+
+  .feedback__button {
+    font-size: 17px;
+    line-height: 20px;
+    margin-top: -350px;
+    margin-left: 300px;
+  }
+
+  .feedback__slider {
+    display: flex;
+    margin-right: auto;
+  }
 }

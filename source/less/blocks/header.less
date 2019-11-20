@@ -1,20 +1,24 @@
 .main-header {
   background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
 }
 
 .main-header__logo {
+  display: block;
   padding-top: 22px;
   padding-bottom: 22px;
   background-color: #ffffff;
   height: 35px;
+  margin-left: 117px;
+  margin-right: 118px;
+  margin-top: 22px;
+  width: 86px;
 }
-
 
 @media (min-width: @tablet-width) {
   .main-header__logo {
     height: 46px;
+    width: 112px;
+    margin-left: 51px;
   }
 }
 
@@ -22,5 +26,6 @@
 @media (min-width: @desktop-width) {
   .main-header__logo {
     height: 72px;
+    margin: 0 auto;
   }
 }

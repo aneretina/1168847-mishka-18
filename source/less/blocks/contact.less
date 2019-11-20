@@ -1,3 +1,7 @@
+.contact {
+  margin-top: 100px;
+}
+
 .contact__title {
   font-size: 18px;
   font-weight: 700;
@@ -10,4 +14,71 @@
   font-weight: 400;
   line-height: 30px;
   color: #444444;
+  border-spacing: 15px;
+}
+
+.contact__row-title {
+  width: 50px;
+  padding: 0;
+}
+
+.contact__button {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .contact__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .contact__table {
+    font-size: 17px;
+    border-spacing: 15px;
+  }
+
+  .contact__row-title {
+    width: 60px;
+  }
+
+  .contact__row-text {
+    width: 219px;
+  }
+
+  .contact__map {
+    width: 768px;
+    height: 457px;
+  }
+
+  .contact__button {
+    display: block;
+    width: 230px;
+    height: 52px;
+    border: solid 2px #444444;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: 150px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .contact__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .contact__table {
+    font-size: 17px;
+    border-spacing: 15px;
+  }
+
+  .contact__map {
+    width: 768px;
+    height: 457px;
+    margin-left: 500px;
+  }
 }
