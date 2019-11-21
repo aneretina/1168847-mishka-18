@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ru">
 
 <head>
@@ -9,11 +10,11 @@
 
 <body>
     <header class="main-header">
+      <div class="container">
         <a class="main-header__logo" href="#">
-            <img class="main-header__logo_icon" src="#" width="86" height="35" alt="Логотип Mishka">
+            <img class="main-header__logo_icon" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Mishka">
         </a>
         <nav class="main-navigation">
-          <div class="main-navigation__wrapper">
             <ul class="main-navigation__list site-list">
                 <li class="main-navigation__option"><a href="#">Каталог товаров</a></li>
                 <li class="main-navigation__option"><a href="#">Вязание на заказ</a></li>
@@ -22,10 +23,12 @@
                 <li class="main-navigation__option"><a href="#">Поиск по сайту</a></li>
                 <li class="main-navigation__option"><a href="#">Корзина: пока пусто</a></li>
             </ul>
-          </div>
+          <p class="main-navigation__delivery">Бесплатная доставка по России</p>
         </nav>
+      </div>
     </header>
     <main>
+      <div class="container">
       <section class="handwork">
         <h1 class="handwork__title">Милые штуки ручной работы для дома</h1>
         <ul class="handwork__list">
@@ -37,21 +40,24 @@
             </li>
         </ul>
           </section>
+        </div>
+        <div class="container">
         <section class="hit">
             <h2 class="hit__title">Вязаные корзинки</h2>
             <p class="hit__subtitle">ТОВАР НЕДЕЛИ</p>
             <p class="hit__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
             <table class="hit__table">
                 <tr>
-                    <th>Цвет:</th>
+                    <td>Цвет:</td>
                     <td>«Тиффани»/серый</td>
                 </tr>
                 <tr>
-                    <th>Диаметр:</th>
+                    <td>Диаметр:</td>
                     <td>25 см</td>
                 </tr>
                 <tr>
-                    <th>Высота:</th>
+                    <td>Высота:</td>
+
                     <td>15 см</td>
                 </tr>
             </table>
@@ -59,6 +65,8 @@
             <p class="hit__price">Цена: 990 руб.</p>
             <a class="hit__order-btn" href="#">ЗАКАЗАТЬ</a>
         </section>
+      </div>
+      <div class="container">
         <section class="company-info">
             <h2 class="company-info__title">Коротко о нас:</h2>
             <ul class="company-info__list">
@@ -70,6 +78,8 @@
                 <li class="company-info__feature">Поставляется в подарочной упаковке</li>
             </ul>
         </section>
+      </div>
+      <div class="container">
         <section class="feedback">
             <div class="feedback-unit">
             <h2 class="feedback__title">Отзывы</h2>
@@ -77,26 +87,34 @@
             <p class="feedback__user-name">Анастасия Красильникова</p>
             <p class="feedback__user-email">@misssssiskras</p>
           </div>
+          <div class="feedback__slider">
             <button class="feedback__button-left" type="button" name="button"></button>
             <button class="feedback__button-right" type="button" name="button"></button>
             <a class="feedback__button" href="#">Написать </a>
+          </div>
         </section>
+      </div>
+      <div class="container">
         <section class="contact">
             <h2 class="contact__title">Контакты</h2>
             <table class="contact__table">
                 <tr class="contact__email">
-                    <td>e-mail:</td>
-                    <td>info@mimimishkashop.ru</td>
+                    <td class="contact__row-title">e-mail:</td>
+                    <td class="contact__row-text">info@mimimishkashop.ru</td>
                 </tr>
                 <tr class="contact_address">
-                    <td>адрес:</td>
-                    <td>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+                    <td class="contact__row-title">адрес:</td>
+                    <td class="contact__row-text">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
                 </tr>
             </table>
-            <img src="#" width="322" height="457" alt="Карта">
+            <img class="contact__map" src="#" width="322" height="457" alt="Карта">
+            <a class="contact__button" href="#">Напиште нам</a>
         </section>
+      </div>
     </main>
     <footer class="footer">
+      <div class="container">
+        <img class="footer__logo" src="#" alt="Логотип Mishka" width="102" height="34">
         <div class="footer__social-media">
             <ul class="footer__sm-list">
                 <li class="footer__sm-item">
@@ -115,11 +133,12 @@
                     </a>
                 </li>
             </ul>
+            </div>
             <section class="footer__copyright">
                 <p>Разработано</p>
                 <img src="#" width="27" height="34" alt="Логотип HTML Academy">
             </section>
-        </div>
+      </div>
     </footer>
 </body>
 
