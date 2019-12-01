@@ -1,12 +1,10 @@
-.contact {
-  margin-top: 100px;
-}
 
 .contact__title {
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
   color: #000000;
+  margin-top: 32px;
 }
 
 .contact__table {
@@ -15,34 +13,49 @@
   line-height: 30px;
   color: #444444;
   border-spacing: 15px;
-}
-
-.contact__row-title {
-  width: 50px;
-  padding: 0;
+  text-align: left;
 }
 
 .contact__button {
-  display: none;
+  display: block;
+  width: 260px;
+  height: 52px;
+  border: solid 2px #444444;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 180px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  padding-top: 15px;
+  margin-bottom: 63px;
 }
 
 @media (min-width: @tablet-width) {
   .contact__title {
     font-size: 43px;
     line-height: 50px;
+    margin-top: 61px;
+    margin-left: -4px;
+  }
+
+  .contact__table tbody {
+    display: flex;
   }
 
   .contact__table {
     font-size: 17px;
-    border-spacing: 15px;
+    border-spacing: 25px;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 50px;
+    margin-top: -35px;
+    margin-left: -51px;
   }
 
-  .contact__row-title {
-    width: 60px;
-  }
-
-  .contact__row-text {
-    width: 219px;
+  .contact_address {
+    vertical-align: top;
   }
 
   .contact__map {
@@ -58,27 +71,52 @@
     font-size: 17px;
     line-height: 20px;
     text-align: center;
-    margin-top: 70px;
-    margin-bottom: 70px;
-    margin-left: 150px;
+    margin-top: 4px;
+    margin-left: 220px;
   }
 }
 
-
 @media (min-width: @desktop-width) {
+  .contact {
+    width: 1150px;
+    margin-top: 140px;
+  }
+
   .contact__title {
     font-size: 53px;
     line-height: 57px;
+    margin-top: 61px;
+    margin-left: 167px;
+  }
+
+  .contact__table tbody {
+    display: table;
   }
 
   .contact__table {
     font-size: 17px;
-    border-spacing: 15px;
+    border-spacing: 25px;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 50px;
+    margin-top: -44px;
+    margin-left: 124px;
+  }
+
+  .contact__row-text {
+    width: 219px;
   }
 
   .contact__map {
-    width: 768px;
+    width: 525px;
     height: 457px;
-    margin-left: 500px;
+    display: block;
+    margin-top: -425px;
+    margin-left: 520px;
+  }
+
+  .contact__button {
+    margin-top: -53px;
+    margin-left: 174px;
   }
 }

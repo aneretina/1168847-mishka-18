@@ -1,6 +1,6 @@
 .company-info {
   width: 320px;
-  margin-top: 130px;
+  margin-top: 25px;
 }
 
 .company-info__list {
@@ -20,12 +20,23 @@
 }
 
 .company-info__feature {
-  width: 175px;
-  margin: 20px;
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
   color: #000000;
+  padding: 0;
+}
+
+.company-info__feature p {
+  display: block;
+  width: 240px;
+  margin-bottom: 25px;
+}
+
+.company-info__svg {
+  margin-top: 10px;
+  margin-left: 5px;
+  fill: #63d1bb;
 }
 
 @media (min-width: @tablet-width) {
@@ -33,34 +44,93 @@
     width: 772px;
   }
 
-  .company-info__list {
-    width: 510px;
+  .company-info__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 0;
+    margin-top: 45px;
+    margin-left: -6px;
+  }
+
+  .company-info__wrapper {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .company-info__list {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+  }
+
+  .company-info__list--2 {
+    margin-left: -57px;
   }
 
   .company-info__feature {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 14px;
+    display: block;
+  }
+
+  .company-info__svg {
+    margin-top: 49px;
+  }
+
+  .company-info__feature p {
+    margin-top: 16px;
+    margin-left: 2px;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .company-info__feature--flower p {
     width: 205px;
+  }
+
+  .company-info__feature--2 p {
+    width: 295px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .company-info {
     width: 1150px;
-    margin-top: 500px;
+    margin-left: 173px;
+  }
+
+  .company-info__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 0;
+    margin-top: 54px;
+    margin-left: -6px;
+  }
+
+  .company-info__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .company-info__list {
-    width: 570px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    width: 50%;
     margin: 0;
+    padding: 0;
+    justify-content: space-around;
+  }
+
+  .company-info__list--2 {
+    margin-left: -225px;
   }
 
   .company-info__feature {
-    width: 248px;
-    margin-right: 10px;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 14px;
+    display: block;
   }
 }

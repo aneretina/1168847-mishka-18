@@ -3,6 +3,7 @@
   font-weight: 700;
   line-height: 30px;
   color: #000000;
+  margin-top: 0;
 }
 
 .feedback__text {
@@ -53,86 +54,135 @@
   height: 52px;
   border: solid 2px #444444;
   background-color: #ffffff;
-  margin-top: 38px;
+  text-align: center;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  padding-top: 10px;
+  margin-top: 50px;
 }
 
 @media (min-width: @tablet-width) {
   .feedback {
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
-    height: 350px;
-    width: 457px;
+    background-size: 350px 457px;
+    width: 772px;
+    margin-top: 70px;
+    margin-left: -50px;
   }
 
   .feedback__title {
+    display: block;
     font-size: 43px;
     line-height: 50px;
-    margin-left: 42px;
-    padding-top: 50px;
+    padding-top: 72px;
+    margin-left: 43px;
   }
 
   .feedback__text {
+    display: block;
     font-size: 17px;
     line-height: 30px;
-    width: 642px;
-    margin-left: 51px;
+    width: 645px;
+    margin-left: 48px;
     padding: 0;
+    margin-top: 49px;
   }
 
-  .feedback__user-name,
+  .feedback__user-name {
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 50px;
+    margin-top: 58px;
+    margin-bottom: 0;
+  }
+
   .feedback__user-email {
     font-size: 18px;
     line-height: 24px;
-    margin-left: 48px;
+    margin-left: 43px;
+    margin-top: 6px;
   }
 
   .feedback__button {
+    position: absolute;
     font-size: 17px;
     line-height: 20px;
     width: 175px;
     height: 52px;
     text-align: center;
-    margin-top: -350px;
-    margin-left: 300px;
+    left: 586px;
+    top: 2129px;
   }
 
   .feedback__slider {
-    display: flex;
-    margin-right: auto;
+    display: block;
+    margin-left: 500px;
+    margin-top: -66px;
+  }
+
+  .feedback__svg {
+    display: block;
+    margin-top: 113px;
+    width: 771px;
+    height: 15px;
   }
 }
 
 
 @media (min-width: @desktop-width) {
+  .feedback {
+    background-size: 350px 457px;
+    width: 1150px;
+    margin-top: 73px;
+    margin-left: 2px;
+  }
+
   .feedback__title {
+    display: block;
     font-size: 53px;
     line-height: 57px;
-    margin-left: 42px;
-    padding-top: 50px;
+    padding-top: 72px;
+    margin-left: 168px;
   }
 
   .feedback__text {
-    width: 768px;
-    margin-left: 51px;
-    padding: 0;
+    font-size: 17px;
+    line-height: 30px;
+    width: 780px;
+    margin-left: 173px;
   }
 
-  .feedback__user-name,
+  .feedback__user-name {
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 169px;
+    margin-top: 39px;
+    margin-bottom: 0;
+  }
+
   .feedback__user-email {
     font-size: 18px;
     line-height: 24px;
-    margin-left: 48px;
+    margin-left: 167px;
+    margin-top: 6px;
   }
 
   .feedback__button {
-    font-size: 17px;
-    line-height: 20px;
-    margin-top: -350px;
-    margin-left: 300px;
+    left: 1071px;
+    top: 2330px;
   }
 
   .feedback__slider {
-    display: flex;
-    margin-right: auto;
+    display: block;
+    margin-left: 826px;
+    margin-top: -70px;
+  }
+
+  .feedback__svg {
+    display: block;
+    margin-top: 165px;
+    width: 1052px;
+    height: 23px;
   }
 }
