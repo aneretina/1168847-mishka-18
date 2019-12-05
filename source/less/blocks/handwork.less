@@ -17,6 +17,7 @@
   color: #010000;
   box-sizing: border-box;
   padding-top: 62px;
+  text-align: center;
 }
 
 .handwork__title p {
@@ -77,9 +78,13 @@
 
 @media (min-width: @tablet-width) {
   .handwork {
-    margin: 0;
+    margin-top: -90px;
+    margin-left: -51px;
     padding: 0;
     width: 772px;
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .handwork__title {
@@ -87,15 +92,17 @@
     font-size: 43px;
     line-height: 50px;
     text-align: center;
-    padding: 0;
-    margin-left: 84px;
-    margin-top: 112px;
+    box-sizing: border-box;
+    padding-top: 153px;
+    margin-left: 134px;
   }
 
   .handwork__list {
     width: 772px;
     height: 119px;
+    margin: 0 auto;
     display: flex;
+    justify-content: center;
     margin-top: 374px;
   }
 
@@ -103,7 +110,6 @@
     display: block;
     font-size: 20px;
     line-height: 30px;
-    width: 386px;
     height: 119px;
     margin: 0;
     padding: 0;
@@ -113,15 +119,20 @@
 @media (min-width: @desktop-width) {
   .handwork {
     width: 1150px;
-    margin-top: 30px;
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: -46px;
+    margin-top: -97px;
   }
 
   .handwork__title {
     width: 614px;
     font-size: 53px;
     line-height: 57px;
-    padding: 0;
-    margin-left: 218px;
+    box-sizing: border-box;
+    padding-top: 153px;
+    margin-left: 265px;
   }
 
   .handwork__list {

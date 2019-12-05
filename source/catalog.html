@@ -49,7 +49,13 @@
         <h1 class="main-catalog__header">Каталог товаров</h1>
         <ul class="catalog-list">
             <li class="catalog-list__item">
-                <a class="catalog-list__img" href="#"><img src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="195"></a>
+                <a class="catalog-list__img" href="#">
+                  <picture class="catalog__item-img">
+                      <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+                      <img src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик" width="260" height="195">
+                </picture>
+                </a>
                 <h3 class="catalog-list__title"><a href="#">Зайчик-попрыгайчик</a></h3>
                 <p class="catalog-list__size">Рост 30 см, вес 200 г</p>
                 <p class="catalog-list__price">1 200 руб.</p>
@@ -58,7 +64,13 @@
                 </a>
             </li>
             <li class="catalog-list__item">
-                <a class="catalog-list__img" href="#"><img src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="195"></a>
+                <a class="catalog-list__img" href="#">
+                  <picture class="catalog__item-img">
+                      <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+                      <img src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x"alt="Корзинка для белья" width="260" height="195">
+                </picture>
+                </a>
                 <h3 class="catalog-list__title"><a href="#">Корзинка для белья</a></h3>
                 <p class="catalog-list__size">Диаметр 15 см, высота 10 см</p>
                 <p class="catalog-list__price">690 руб.</p>
@@ -67,7 +79,13 @@
                 </a>
             </li>
             <li class="catalog-list__item">
-                <a class="catalog-list__img" href="#"><img src="img/photo-toys-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="195"></a>
+                <a class="catalog-list__img" href="#">
+                  <picture class="catalog__item-img">
+                      <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+                      <img src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Корзинка для белья" width="260" height="195">
+                  </picture>
+                </a>
                 <h3 class="catalog-list__title"><a href="#">Большая корзинка для игрушек</a></h3>
                 <p class="catalog-list__size">Диаметр 30 см, высота 30 см</p>
                 <p class="catalog-list__price">1 500 руб.</p>
@@ -85,7 +103,11 @@
             </g>
           </svg>
             <h2 class="production-process__title">Процесс производства</h2>
-            <img class="production-process__img" src="img/video-mobile@1x.jpg" alt="Вязаная корзинка" width="260" height="150">
+            <picture>
+              <source media="(min-width: 1050px)" srcset="img/video-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
+              <img class="production-process__img" src="img/video-mobile@1x.jpg" alt="Вязаная корзинка" width="260" height="150">
+            </picture>
             <button class="production-process__play" type="button" name="button"></button>
             <p class="production-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
             <a class="production-process__button" href="#">Сделать заказ</a>
