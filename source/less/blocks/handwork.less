@@ -5,8 +5,13 @@
   padding: 0;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center -26px;
+  background-position: center -23px;
   margin-left: -32px;
+
+  @media (min-resolution: @retina-dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 575px auto;
+  }
 }
 
 .handwork__title {
@@ -17,12 +22,8 @@
   color: #010000;
   box-sizing: border-box;
   padding-top: 62px;
-  text-align: center;
-}
-
-.handwork__title p {
-  margin: 0;
-  padding: 0;
+  padding-left: 50px;
+  padding-right: 50px;
   text-align: center;
 }
 
@@ -33,19 +34,22 @@
 }
 
 .handwork__link {
+  position: relative;
   display: block;
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
   color: #ffffff;
-  width: 320px;
   height: 103px;
   margin: 0;
+}
+
+.handwork__link p {
+  width: 103px;
+  margin: 0;
   box-sizing: border-box;
-  padding-right: 120px;
   padding-left: 30px;
-  padding-top: 20px;
-  z-index: -1;
+  padding-top: 22px;
 }
 
 .handwork__link--interior {
@@ -63,7 +67,8 @@
   background: url("../img/icon-interior.svg") center center no-repeat;
   width: 40px;
   height: 62px;
-  left: 320px;
+  left: 247px;
+  top: 13px;
 }
 
 .handwork__link--toy::before {
@@ -73,18 +78,39 @@
   background: url("../img/icon-toy.svg") center center no-repeat;
   width: 60px;
   height: 60px;
-  left: 320px;
+  left: 237px;
+  top: 13px;
 }
 
 @media (min-width: @tablet-width) {
   .handwork {
-    margin-top: -90px;
-    margin-left: -51px;
+    position: relative;
+    margin: 0 auto;
+    bottom: 36px;
     padding: 0;
     width: 772px;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center -26px;
+    z-index: -1;
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+      background-size: 1193px auto;
+    }
+  }
+
+  .handwork::after {
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-size: 768px 24px;
+    background-position-x: -38px;
+    height: 24px;
+    width: 100%;
+    bottom: -8px;
   }
 
   .handwork__title {
@@ -99,45 +125,74 @@
 
   .handwork__list {
     width: 772px;
-    height: 119px;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
-    margin-top: 374px;
+    margin-top: 319px;
   }
 
   .handwork__unit {
     display: block;
     font-size: 20px;
     line-height: 30px;
-    height: 119px;
+    width: 334px;
     margin: 0;
     padding: 0;
+    z-index: -1;
+  }
+
+  .handwork__link {
+    height: 121px;
+    z-index: 1;
+  }
+
+  .handwork__link p {
+    width: 111px;
+    display: block;
+    box-sizing: border-box;
+    padding-top: 31px;
+    padding-left: 37px;
+    padding-bottom: 23px;
+  }
+
+  .handwork__link--interior::before {
+    top: 28px;
+    left: 255px;
+  }
+
+  .handwork__link--toy::before {
+    top: 28px;
+    left: 239px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .handwork {
+    display: block;
     width: 1150px;
     background-image: url("../img/hero-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-    margin-left: -46px;
-    margin-top: -97px;
+    bottom: 35px;
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+      background-size: 1144px auto;
+    }
   }
 
   .handwork__title {
-    width: 614px;
+    width: 714px;
     font-size: 53px;
     line-height: 57px;
     box-sizing: border-box;
     padding-top: 153px;
-    margin-left: 265px;
+    margin-left: 218px;
   }
 
   .handwork__list {
     width: 1050px;
     display: flex;
+    margin-top: 364px;
+    margin-left: 48px;
   }
 
   .handwork__unit {
@@ -151,5 +206,15 @@
 
   .handwork__link {
     margin: 0;
+  }
+
+  .handwork__link--interior::before {
+    top: 24px;
+    left: 450px;
+  }
+
+  .handwork__link--toy::before {
+    top: 28px;
+    left: 431px;
   }
 }
