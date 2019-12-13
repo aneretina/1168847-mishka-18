@@ -1,3 +1,18 @@
+.hit {
+  width: 320px;
+}
+
+.hit::after {
+  content: "";
+  background-image: url("../img/bg-zigzag-line.svg");
+  width: 319px;
+  height: 6px;
+  display: block;
+  background-repeat: repeat-x;
+  background-position: 7px;
+  background-size: 300px 7px;
+}
+
 .hit__title {
   font-size: 25px;
   font-weight: 700;
@@ -83,6 +98,12 @@
     width: 768px;
     bottom: 8px;
     left: 50px;
+  }
+
+  .hit::after {
+    height: 17px;
+    background-position: 17px;
+    background-size: 770px 17px;
   }
 
   .hit__title {
