@@ -1,6 +1,6 @@
 .company-info {
   width: 320px;
-  margin-top: 25px;
+  margin-top: 72px;
 }
 
 .company-info__list {
@@ -12,6 +12,10 @@
   list-style: none;
 }
 
+.company-info__list--2 {
+  margin-top: -7px;
+}
+
 .company-info__title {
   font-size: 25px;
   font-weight: 700;
@@ -20,6 +24,7 @@
 }
 
 .company-info__feature {
+  margin-top: -1px;
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
@@ -29,20 +34,29 @@
 
 .company-info__feature p {
   display: block;
-  width: 240px;
+  width: 220px;
   margin-bottom: 25px;
+}
+
+.company-info__feature--short p {
+  width: 194px;
+}
+
+.company-info__feature--long p {
+  width: 280px;
 }
 
 .company-info__svg {
   margin-top: 10px;
-  margin-left: 5px;
+  margin-left: 6px;
   fill: #63d1bb;
 }
 
 @media (min-width: @tablet-width) {
   .company-info {
     width: 768px;
-    margin-left: 50px;
+    margin-left: 45px;
+    margin-top: 113px;
   }
 
   .company-info__title {
@@ -77,14 +91,15 @@
   }
 
   .company-info__feature p {
+    width: 241px;
     margin-top: 16px;
     margin-left: 2px;
     margin-right: 0;
     margin-bottom: 0;
   }
 
-  .company-info__feature--flower p {
-    width: 205px;
+  .company-info__feature--short p {
+    width: 213px;
   }
 
   .company-info__feature--2 p {
@@ -95,8 +110,8 @@
 @media (min-width: @desktop-width) {
   .company-info {
     width: 1150px;
-    margin-top: 188px;
-    margin-left: 226px;
+    margin-top: 292px;
+    margin-left: 224px;
   }
 
   .company-info__title {

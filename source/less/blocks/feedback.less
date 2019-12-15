@@ -1,3 +1,8 @@
+.feedback {
+  position: relative;
+  top: 29px;
+}
+
 .feedback__title {
   font-size: 25px;
   font-weight: 700;
@@ -14,6 +19,8 @@
 }
 
 .feedback__user-name {
+  display: block;
+  margin-top: 28px;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
@@ -21,6 +28,8 @@
 }
 
 .feedback__user-email {
+  margin-top: -13px;
+  display: block;
   font-size: 17px;
   font-weight: 400;
   line-height: 30px;
@@ -30,7 +39,7 @@
 .feedback__slider {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 7px;
+  padding-top: 10px;
 }
 
 .feedback__button-left {
@@ -64,22 +73,30 @@
   margin-top: 40px;
 }
 
-.feedback__svg {
+.feedback::after {
+  content: "";
   display: block;
-  margin-top: 44px;
-  margin-left: -38px;
-  width: 320px;
-  height: 6px;
+  height: 7px;
+  width: 319px;
+  position: absolute;
+  bottom: -28px;
+  right: -31px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: 7px;
+  background-size: 300px 7px;
 }
+
 
 @media (min-width: @tablet-width) {
   .feedback {
     position: relative;
-    top: 66px;
+    top: 77px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-size: 350px 457px;
     width: 768px;
+    height: 457px;
 
     @media (min-resolution: @retina-dppx) {
       background-image: url("../img/review@2x.jpg");
@@ -108,7 +125,7 @@
     font-size: 18px;
     line-height: 24px;
     margin-left: 50px;
-    margin-top: 58px;
+    margin-top: 61px;
     margin-bottom: 0;
   }
 
@@ -126,14 +143,14 @@
     width: 175px;
     height: 52px;
     text-align: center;
-    right: 51px;
-    top: 31px;
+    right: 47px;
+    top: 40px;
   }
 
   .feedback__slider {
     position: absolute;
-    right: 29px;
-    top: 356px;
+    right: 25px;
+    top: 350px;
   }
 
   .feedback__button-left {
@@ -146,11 +163,15 @@
     border: none;
   }
 
-  .feedback__svg {
-    display: block;
-    margin-top: 113px;
-    width: 771px;
+  .feedback::after {
     height: 15px;
+    width: 771px;
+    position: absolute;
+    bottom: -87px;
+    right: 0;
+    background-repeat: repeat-x;
+    background-position: 12px;
+    background-size: 771px 15px;
   }
 }
 
@@ -160,15 +181,15 @@
     position: relative;
     background-size: 350px 457px;
     width: 1150px;
-    top: 72px;
-    left: 52px;
+    top: 76px;
+    left: 49px;
   }
 
   .feedback__title {
     display: block;
     font-size: 53px;
     line-height: 57px;
-    padding-top: 72px;
+    padding-top: 74px;
     margin-left: 168px;
   }
 
@@ -195,21 +216,25 @@
   }
 
   .feedback__button {
-    right: 101px;
-    top: 43px;
+    right: 95px;
+    top: 46px;
   }
 
   .feedback__slider {
     display: block;
     position: absolute;
-    top: 301px;
-    right: 78px;
+    top: 304px;
+    right: 70px;
   }
 
-  .feedback__svg {
-    display: block;
-    margin-top: 165px;
-    width: 1052px;
+  .feedback::after {
+    width: 1050px;
     height: 23px;
+    position: absolute;
+    bottom: -97px;
+    left: 0;
+    background-repeat: repeat-x;
+    background-position: -21px;
+    background-size: 1050px 23px;
   }
 }

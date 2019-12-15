@@ -1,3 +1,9 @@
+.hit {
+  top: 2px;
+  position: relative;
+  display: block;
+}
+
 .hit__title {
   font-size: 25px;
   font-weight: 700;
@@ -23,8 +29,8 @@
 }
 
 .hit__table {
-  margin-top: -10px;
-  margin-left: -12px;
+  margin-top: -7px;
+  margin-left: -14px;
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
@@ -55,7 +61,7 @@
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  padding: 20px 84px;
+  padding: 16px 84px;
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
@@ -64,24 +70,28 @@
   width: 259px;
   border: solid 2px #444444;
   background-color: #ffffff;
+  margin-top: 25px;
 }
 
-.hit__svg {
-  font-size: 43px;
-  line-height: 50px;
-  text-align: left;
-  margin: 0;
-  padding: 0;
-  margin-top: 40px;
-  margin-left: -30px;
-  fill: #f1f1f1;
+.hit::after {
+  content: "";
+  display: block;
+  height: 7px;
+  width: 319px;
+  position: absolute;
+  bottom: -42px;
+  right: -31px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: 7px;
+  background-size: 300px 7px;
 }
 
 @media (min-width: @tablet-width) {
   .hit {
     position: relative;
     width: 768px;
-    bottom: 8px;
+    top: -9px;
     left: 50px;
   }
 
@@ -122,7 +132,7 @@
     width: 333px;
     position: absolute;
     right: 98px;
-    bottom: 69px;
+    bottom: 0;
   }
 
   .hit__price {
@@ -130,7 +140,7 @@
     font-size: 20px;
     line-height: 24px;
     width: 288px;
-    margin-top: 40px;
+    margin-top: 46px;
   }
 
   .hit__order-btn {
@@ -139,17 +149,22 @@
     margin-top: 32px;
   }
 
-  .hit__svg {
-    width: 771px;
+  .hit::after {
     height: 15px;
-    margin-top: 51px;
+    width: 771px;
+    position: absolute;
+    bottom: -70px;
+    right: 70px;
+    background-repeat: repeat-x;
+    background-position: 12px;
+    background-size: 771px 15px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .hit {
-    top: 122px;
-    width: 1150px;
+    top: 131px;
+    left: 46px;
   }
 
   .hit__title {
@@ -188,6 +203,8 @@
 
   .hit__image {
     position: absolute;
+    left: 532px;
+    bottom: 0;
     height: 636px;
     width: 525px;
   }
@@ -195,7 +212,7 @@
   .hit__price {
     font-size: 20px;
     line-height: 24px;
-    margin-top: 93px;
+    margin-top: 102px;
     margin-left: 177px;
   }
 
@@ -206,11 +223,14 @@
     margin-left: 176px;
   }
 
-  .hit__svg {
+  .hit::after {
     width: 1050px;
     height: 23px;
-    margin-top: 65px;
-    margin-left: 0;
-    fill: #f1f1f1;
+    position: absolute;
+    bottom: -97px;
+    left: 0;
+    background-repeat: repeat-x;
+    background-position: -21px;
+    background-size: 1050px 23px;
   }
 }
