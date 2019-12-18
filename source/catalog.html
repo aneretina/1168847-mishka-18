@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -117,7 +118,7 @@
                       <img class="catalog-list__img" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Корзинка для белья" width="260" height="195">
                   </picture>
                 </a>
-                <div class="catalog-list__info">
+                <div class="catalog-list__info catalog-list__info--toy">
                 <h3 class="catalog-list__title"><a href="#">Большая корзинка для игрушек</a></h3>
                 <p class="catalog-list__size">Диаметр 30 см, высота 30 см</p>
                 <p class="catalog-list__price catalog-list__price--toy">1 500 руб.</p>
@@ -132,11 +133,6 @@
       </div>
       <div class="container">
         <div class="production-process">
-          <svg class="production-process__video" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
-            <g transform="translate(0 192)">
-              <path d="M26-177l6-4v16l-6-4V-177z M24-177v8c0,2.209-1.791,4-4,4H4c-2.209,0-4-1.791-4-4v-8c0-2.209,1.791-4,4-4h10 c0-1.105,0.895-2,2-2v-2H5c-0.553,0-1-0.447-1-1s0.447-1,1-1h12c0.553,0,1,0.447,1,1v3c1.105,0,2,0.895,2,2 C22.209-181,24-179.209,24-177z M12-177H4v8h8V-177z M20-176c0-0.553-0.447-1-1-1h-4c-0.553,0-1,0.447-1,1s0.447,1,1,1h4 C19.553-175,20-175.447,20-176z"/>
-            </g>
-          </svg>
             <h2 class="production-process__title">Процесс производства</h2>
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
@@ -147,8 +143,10 @@
               <img class="production-process__img" src="img/video-mobile@1x.jpg" alt="Вязаная корзинка" width="260" height="150">
             </picture>
             <button class="production-process__play" type="button" name="button"></button>
+            <div class="production-process__after-video">
             <p class="production-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
             <a class="production-process__button" href="#">Сделать заказ</a>
+            </div>
         </div>
       </div>
     </main>
