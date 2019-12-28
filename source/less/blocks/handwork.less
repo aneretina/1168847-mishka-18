@@ -54,32 +54,66 @@
 
 .handwork__link--interior {
   background-color: #63d1bb;
+
+  &:hover {
+    height: 108px;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .handwork__link--toy {
   background-color: #56c3b2;
+
+  &:hover {
+    height: 108px;
+  }
+
+  &:active {
+    height: 103px;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .handwork__link--interior::before {
   content: "";
   position: absolute;
-  opacity: 0.2;
+  opacity: 0.5;
   background: url("../img/icon-interior.svg") center center no-repeat;
   width: 40px;
   height: 62px;
   left: 246px;
   top: 19px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
+
 
 .handwork__link--toy::before {
   content: "";
   position: absolute;
-  opacity: 0.2;
+  opacity: 0.5;
   background: url("../img/icon-toy.svg") center center no-repeat;
   width: 60px;
   height: 60px;
   left: 237px;
   top: 19px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -145,6 +179,10 @@
   .handwork__link {
     height: 121px;
     z-index: 1;
+
+    &:hover {
+      height: 126px;
+    }
   }
 
   .handwork__link p {
@@ -210,6 +248,10 @@
 
   .handwork__link {
     margin: 0;
+
+    &:hover {
+      height: 126px;
+    }
   }
 
   .handwork__link p {

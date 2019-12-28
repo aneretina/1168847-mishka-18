@@ -50,6 +50,11 @@
   margin-bottom: 42px;
 }
 
+.contact__row-email {
+  text-decoration: underline;
+  text-decoration-color: #46c1ae;
+}
+
 @media (min-width: @tablet-width) {
   .contact {
     width: 768px;
@@ -86,6 +91,18 @@
     padding: 0;
     margin: 0;
     text-align: left;
+  }
+
+  .contact__row-email:hover {
+    text-decoration: underline;
+    text-decoration-color: #46c1ae;
+    color: #46c1ae;
+  }
+
+  .contact__row-email:active {
+    text-decoration: underline;
+    text-decoration-color: rgba(70, 193, 174, 0.1);
+    color: rgba(70, 193, 174, 0.3);
   }
 
   .contact_address {

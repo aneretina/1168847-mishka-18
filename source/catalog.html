@@ -24,7 +24,7 @@
     <div class="container">
       <a href="index.html" class="main-header__logo">
    <picture>
-     <source media="(min-width: 1050px)" srcset="img/logo-desktop.svg">
+     <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
      <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
      <img class="main-header__logo-icon" src="img/logo-mobile.svg" width="86" height="36" alt="Мишка">
    </picture>
@@ -32,18 +32,23 @@
       <nav class="main-navigation main-navigation--closed">
           <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-navigation__list site-list">
-              <li class="main-navigation__option site-list__item site-list__item--catalog"><a href="catalog.html">Каталог товаров</a></li>
-              <li class="main-navigation__option site-list__item"><a href="#">Вязание на заказ</a></li>
+              <li class="main-navigation__option site-list__item site-list__item--catalog link">
+                <a href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="main-navigation__option site-list__item link">
+                <a href="#">Вязание на заказ</a>
+              </li>
           </ul>
           <ul class="main-navigation__list user-list">
-              <li class="main-navigation__option user-list__item user-list__item--search"><a href="#">
+              <li class="main-navigation__option user-list__item user-list__item--search link">
+                <a href="#">
                 <svg  class="main-navigation__svg user-list__svg  user-list__svg--loupe" width="18" height="18">
                   <use xlink:href="#icon-search"></use>
                 </svg>
                 <p>Поиск по сайту</p>
               </a>
             </li>
-              <li class="main-navigation__option user-list__item user-list__item--cart"><a href="#">
+              <li class="main-navigation__option user-list__item user-list__item--cart link"><a href="#">
                 <svg  class="main-navigation__svg user-list__svg user-list__svg--cart" width="21" height="18">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
@@ -52,8 +57,8 @@
             </li>
           </ul>
           <ul class="main-navigation__list site-list-2">
-              <li class="main-navigation__option site-list-2__item"><a href="#">Новые поступления</a></li>
-              <li class="main-navigation__option site-list-2__item"><a href="#">Распродажа</a></li>
+              <li class="main-navigation__option site-list-2__item link"><a href="#">Новые поступления</a></li>
+              <li class="main-navigation__option site-list-2__item link"><a href="#">Распродажа</a></li>
           </ul>
         <p class="main-navigation__delivery">Бесплатная доставка по России</p>
       </nav>
@@ -145,7 +150,7 @@
             <button class="production-process__play" type="button" name="button"></button>
             <div class="production-process__after-video">
             <p class="production-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-            <a class="production-process__button" href="#">Сделать заказ</a>
+            <a class="production-process__button button" href="#">Сделать заказ</a>
             </div>
         </div>
       </div>
@@ -159,21 +164,21 @@
             <ul class="footer__sm-list">
                 <li class="footer__sm-item">
                     <a href="#">
-                      <svg width="22" height="21">
+                      <svg class="footer__sm-svg" width="22" height="21">
                         <use xlink:href="#icon-insta"></use>
                       </svg>
                     </a>
                 </li>
                 <li class="footer__sm-item">
                     <a href="#">
-                      <svg width="15" height="28">
+                      <svg  class="footer__sm-svg" width="15" height="28">
                         <use xlink:href="#icon-fb"></use>
                       </svg>
                     </a>
                 </li>
                 <li class="footer__sm-item">
                     <a href="#">
-                      <svg width="23" height="20">
+                      <svg  class="footer__sm-svg" width="23" height="20">
                         <use xlink:href="#icon-twitter"></use>
                       </svg>
                     </a>
