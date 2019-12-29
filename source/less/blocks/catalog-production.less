@@ -34,7 +34,6 @@
   color: #63d1bb;
 }
 
-
 .production-process_video {
   display: none;
   fill: #63d1bb;
@@ -53,30 +52,30 @@
   background-color: transparent;
   border: 0;
   z-index: 1;
+  right: 82px;
+  top: 137px;
   cursor: pointer;
 }
 
 .production-process__play::after {
   content: "";
   position: absolute;
-  right: 180px;
-  top: 60px;
+  right: 0;
+  top: 0;
   background: url("../img/icon-play.svg") center center no-repeat;
   width: 101px;
   height: 77px;
   z-index: 2;
 
   &:hover {
-    width: 121px;
-    height: 92px;
+    transform: scale(1.2);
   }
 
   &:active {
-    width: 81px;
-    height: 62px;
-    opacity: 0.3;
+    transform: scale(0.8);
   }
 }
+
 
 .production-process__text {
   display: block;
@@ -169,15 +168,16 @@
     width: 668px;
     height: 288px;
     margin: 0 auto;
-
-    &:hover {
-     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
-    }
-
-    &:active {
-     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
-    }
   }
+
+  .production-process__after-video:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .production-process__after-video:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+
 
   .production-process__text {
     width: 581px;

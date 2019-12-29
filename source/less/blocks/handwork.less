@@ -1,4 +1,3 @@
-
 .handwork {
   width: 320px;
   margin-top: -7px;
@@ -54,27 +53,10 @@
 
 .handwork__link--interior {
   background-color: #63d1bb;
-
-  &:hover {
-    height: 108px;
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-  }
 }
 
 .handwork__link--toy {
   background-color: #56c3b2;
-
-  &:hover {
-    height: 108px;
-  }
-
-  &:active {
-    height: 103px;
-    color: rgba(255, 255, 255, 0.3);
-  }
 }
 
 .handwork__link--interior::before {
@@ -117,6 +99,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .main-index {
+    overflow: hidden;
+  }
+
   .handwork {
     position: relative;
     margin: 0 auto;
@@ -173,16 +159,11 @@
     width: 334px;
     margin: 0;
     padding: 0;
-    z-index: -1;
   }
 
   .handwork__link {
     height: 121px;
     z-index: 1;
-
-    &:hover {
-      height: 126px;
-    }
   }
 
   .handwork__link p {
@@ -208,12 +189,17 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-index {
+    overflow: hidden;
+  }
+
   .handwork {
     display: block;
     width: 1150px;
     background-image: url("../img/hero-desktop@1x.jpg");
     background-repeat: no-repeat;
     bottom: 35px;
+    z-index: initial;
 
     @media (min-resolution: @retina-dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
@@ -244,14 +230,21 @@
     width: 50%;
     height: 119px;
     justify-content: space-between;
+    z-index: 0;
   }
 
   .handwork__link {
     margin: 0;
+  }
 
-    &:hover {
-      height: 126px;
-    }
+  .handwork__link:hover {
+    height: 126px;
+    margin-top: -5px;
+  }
+
+  .handwork__link:active {
+    height: 126px;
+    margin-top: -5px;
   }
 
   .handwork__link p {
