@@ -72,15 +72,35 @@
   height: 35px;
   width: 35px;
   border: 2px solid #444444;
+}
 
-  &:hover {
-    border: solid 2px #62d1ba;
-  }
+.form__type-label::before {
+  content: "";
+  display: none;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  top: 3px;
+  left: -42px;
+  background-color: #62d1ba;
+}
 
-  &:active {
-    opacity: 0.3;
-    border: solid 2px #444444;
-  }
+.form__type-label:hover::after {
+  border: solid 2px #62d1ba;
+}
+
+.form__type-label:active::after {
+  opacity: 0.3;
+  border: solid 2px #444444;
+}
+
+input:checked + .form__type-label::before {
+  display: block;
+}
+
+input:focus + .form__type-label::before {
+  display: block;
 }
 
 .form__color {
@@ -116,6 +136,36 @@
   height: 35px;
   width: 35px;
   border: 2px solid #444444;
+}
+
+.form__color-label::before {
+  content: "";
+  display: none;
+  position: absolute;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  left: -67px;
+  bottom: -2px;
+  height: 22px;
+  width: 33px;
+}
+
+
+input:checked + .form__color-label::before {
+  display: block;
+}
+
+input:focus + .form__color-label::before {
+  display: block;
+}
+
+.form__color-label:hover::after {
+  border: solid 2px #62d1ba;
+}
+
+.form__color-label:active::after {
+  opacity: 0.3;
+  border: solid 2px #444444;
 }
 
 .form__person {
@@ -542,10 +592,6 @@
     margin-bottom: 54px;
     box-sizing: border-box;
     padding-left: 27px;
-  }
-
-  .footer-form {
-    margin-top: 0;
   }
 }
 

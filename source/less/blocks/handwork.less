@@ -1,15 +1,15 @@
 .handwork {
   width: 320px;
+  margin: 0 auto;
   margin-top: -7px;
   padding: 0;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center -18px;
-  margin-left: -32px;
+  background-position: center -17px;
 
   @media (min-resolution: @retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
-    background-size: 575px auto;
+    background-size: 562px auto;
   }
 }
 
@@ -21,15 +21,15 @@
   color: #010000;
   box-sizing: border-box;
   padding-top: 71px;
-  padding-left: 37px;
-  padding-right: 37px;
   text-align: center;
 }
 
 .handwork__list {
-  margin-top: 125px;
+  margin-top: 124px;
   list-style: none;
   padding: 0;
+  width: 320px;
+  margin-left: -31px;
 }
 
 .handwork__link {
@@ -78,7 +78,6 @@
   }
 }
 
-
 .handwork__link--toy::before {
   content: "";
   position: absolute;
@@ -88,14 +87,6 @@
   height: 60px;
   left: 237px;
   top: 19px;
-
-  &:hover {
-    opacity: 0.7;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 @media (min-width: @tablet-width) {
@@ -112,7 +103,7 @@
     background-image: url("../img/hero-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center -26px;
-    z-index: -1;
+    z-index: initial;
 
     @media (min-resolution: @retina-dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
@@ -131,6 +122,7 @@
     height: 24px;
     width: 100%;
     bottom: -8px;
+    z-index: 1;
   }
 
   .handwork__title {
@@ -151,7 +143,8 @@
     width: 772px;
     display: flex;
     justify-content: center;
-    margin-top: 366px;
+    margin-top: 369px;
+    margin-left: 0;
   }
 
   .handwork__unit {
@@ -159,11 +152,32 @@
     width: 334px;
     margin: 0;
     padding: 0;
+    z-index: 0;
   }
 
   .handwork__link {
     height: 121px;
     z-index: 1;
+  }
+
+  .handwork__link:hover {
+    height: 126px;
+    margin-top: -5px;
+  }
+
+  .handwork__link--interior:hover::before,
+  .handwork__link--toy:hover::before {
+    opacity: 0.7;
+  }
+
+  .handwork__link--interior:active::before,
+  .handwork__link--toy:active::before {
+    opacity: 0.3;
+  }
+
+  .handwork__link:active {
+    height: 126px;
+    margin-top: -5px;
   }
 
   .handwork__link p {
@@ -172,9 +186,13 @@
     width: 111px;
     display: block;
     box-sizing: border-box;
-    padding-top: 31px;
-    padding-left: 37px;
+    padding-top: 29px;
+    padding-left: 33px;
     padding-bottom: 23px;
+  }
+
+  .handwork__link p:active {
+    opacity: 0.3;
   }
 
   .handwork__link--interior::before {

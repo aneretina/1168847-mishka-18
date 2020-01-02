@@ -66,16 +66,7 @@
   width: 101px;
   height: 77px;
   z-index: 2;
-
-  &:hover {
-    transform: scale(1.2);
-  }
-
-  &:active {
-    transform: scale(0.8);
-  }
 }
-
 
 .production-process__text {
   display: block;
@@ -148,16 +139,16 @@
     background-color: transparent;
     border: 0;
     z-index: 1;
-    top: 174px;
-    left: 135px;
+    top: 249px;
+    left: 334px;
     cursor: pointer;
   }
 
   .production-process__play::after {
     content: "";
     position: absolute;
-    left: 201px;
-    top: 74px;
+    left: 0;
+    top: 0;
     background: url("../img/icon-play.svg") center center no-repeat;
     z-index: 2;
   }
@@ -168,6 +159,14 @@
     width: 668px;
     height: 288px;
     margin: 0 auto;
+  }
+
+  .production-process__img:hover .production-process__play::after {
+    transform: scale(1.2);
+  }
+
+  .production-process__img:active .production-process__play::after {
+    transform: scale(0.8);
   }
 
   .production-process__after-video:hover {
@@ -207,14 +206,14 @@
     box-sizing: border-box;
     position: relative;
     margin: 0;
-    margin-bottom: -153px;
+    margin-top: -5px;
   }
 
   .production-process__after-video {
     position: absolute;
     display: block;
     right: 51px;
-    top: 45px;
+    top: 40px;
     border: 1px solid #ececec;
     width: 367px;
     height: 455px;
