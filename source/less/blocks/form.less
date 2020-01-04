@@ -8,7 +8,7 @@
   height: 177px;
   width: 320px;
   margin-top: 12px;
-  margin-left: -30px;
+  margin-left: 0;
   box-sizing: border-box;
   padding-top: 75px;
 }
@@ -95,12 +95,12 @@
   border: solid 2px #444444;
 }
 
-input:checked + .form__type-label::before {
+.form__type-input:checked + .form__type-label::before {
   display: block;
 }
 
-input:focus + .form__type-label::before {
-  display: block;
+.form__type-input:focus + .form__type-label::after {
+  border-color: #62d1ba;
 }
 
 .form__color {
@@ -151,12 +151,12 @@ input:focus + .form__type-label::before {
 }
 
 
-input:checked + .form__color-label::before {
+.form__color-input:checked + .form__color-label::before {
   display: block;
 }
 
-input:focus + .form__color-label::before {
-  display: block;
+.form__color-input:focus + .form__color-label::after {
+  border-color: #62d1ba;
 }
 
 .form__color-label:hover::after {
@@ -356,12 +356,11 @@ input:focus + .form__color-label::before {
     line-height: 30px;
     display: block;
     margin-top: 67px;
-    padding-left: 52px;
-    padding-right: 47px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .form {
-    margin-left: 50px;
     margin-top: 69px;
   }
 
@@ -370,7 +369,6 @@ input:focus + .form__color-label::before {
     font-size: 17px;
     font-weight: 700;
     position: relative;
-    margin-left: 28px;
   }
 
   .form__section-title::after {
@@ -383,7 +381,7 @@ input:focus + .form__color-label::before {
 
   .form__type-list {
     display: block;
-    margin-left: 200px;
+    margin-left: 175px;
     margin-top: -52px;
   }
 
@@ -405,7 +403,6 @@ input:focus + .form__color-label::before {
   }
 
   .form__color {
-    width: 100%;
     margin-top: 67px;
     box-sizing: border-box;
     padding-top: 44px;
@@ -421,8 +418,8 @@ input:focus + .form__color-label::before {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 209px;
-    margin-top: -48px;
+    margin-left: 185px;
+    margin-top: -46px;
     flex-direction: row;
     width: 500px;
   }
@@ -460,7 +457,7 @@ input:focus + .form__color-label::before {
   .form__person-list {
     width: 500px;
     margin-top: -44px;
-    margin-left: 191px;
+    margin-left: 169px;
     padding: 0;
   }
 
@@ -570,7 +567,7 @@ input:focus + .form__color-label::before {
     line-height: 18px;
     border: solid 2px #444444;
     margin-top: -40px;
-    margin-left: 193px;
+    margin-left: 166px;
   }
 
   .form__obligatory-field {
@@ -579,7 +576,7 @@ input:focus + .form__color-label::before {
     display: flex;
     justify-content: flex-end;
     margin-top: 59px;
-    margin-right: 74px;
+    margin-right: 0;
   }
 
   .form__button {
@@ -588,7 +585,7 @@ input:focus + .form__color-label::before {
     display: flex;
     justify-content: flex-start;
     margin-top: -57px;
-    margin-left: 24px;
+    margin-left: 0;
     margin-bottom: 54px;
     box-sizing: border-box;
     padding-left: 27px;
@@ -618,19 +615,18 @@ input:focus + .form__color-label::before {
   }
 
   .form__main-text {
-    margin-top: 129px;
-    padding-left: 226px;
+    margin-top: 127px;
+    padding-left: 176px;
     padding-right: 200px;
   }
 
   .form {
-    margin-left: 50px;
     margin-top: 69px;
   }
 
   .form__section-title {
     width: 120px;
-    margin-left: 90px;
+    margin-left: 62px;
   }
 
   .form__section-title::after {
@@ -642,7 +638,7 @@ input:focus + .form__color-label::before {
   }
 
   .form__type-list {
-    margin-left: 208px;
+    margin-left: 183px;
   }
 
   .form__type-label {
@@ -672,7 +668,7 @@ input:focus + .form__color-label::before {
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: row;
-    margin-left: 212px;
+    margin-left: 187px;
     margin-top: -41px;
     width: 730px;
   }
@@ -709,7 +705,7 @@ input:focus + .form__color-label::before {
     width: 730px;
     margin-top: -45px;
     padding: 0;
-    margin-left: 202px;
+    margin-left: 177px;
   }
 
   .form__person-question {
@@ -778,17 +774,17 @@ input:focus + .form__color-label::before {
   .form__addition-textarea {
     width: 700px;
     height: 142px;
-    margin-left: 200px;
+    margin-left: 174px;
     margin-top: -37px;
   }
 
   .form__obligatory-field {
     margin-top: 53px;
-    margin-right: 248px;
+    margin-right: 174px;
   }
 
   .form__button {
-    margin-top: -59px;
-    margin-left: 201px;
+    margin-top: -57px;
+    margin-left: 174px;
   }
 }
