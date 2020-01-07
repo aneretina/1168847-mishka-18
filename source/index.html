@@ -223,12 +223,37 @@
             </div>
             <section class="footer__copyright">
                 <p class="footer__copyright-text">Разработано</p>
+                <a href="https://htmlacademy.ru/intensive/adaptive"></a>
                 <svg  class="footer__copyright-svg" width="27" height="34">
                   <use xlink:href="#logo-htmlacademy"></use>
                 </svg>
+                <a>
             </section>
       </div>
     </footer>
+    <section class="modal modal__login">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="modal__subtitle">Выберите размер:</p>
+        <ul class="modal__form-list">
+          <li class="modal__form-option">
+          <input class="modal__form-input visually-hidden" id="size-S" type="radio" name="size" value="S" checked="">
+          <label class="modal__form-label" for="size-S">S</label>
+          </li>
+          <li class="modal__form-option">
+          <input class="modal__form-input visually-hidden" id="size-M" type="radio" name="size" value="S" checked="">
+          <label class="modal__form-label" for="size-M">M</label>
+          </li>
+          <li class="modal__form-option">
+          <input class="modal__form-input visually-hidden" id="size-L" type="radio" name="size" value="S" checked="">
+          <label class="modal__form-label" for="size-L">L</label>
+          </li>
+        </ul>
+        <button class="modal__button" type="submit">Добавить</button>
+      </form>
+      <div class="modal__shadow"></div>
+    </section>
+      <script src="js/script.js"></script>
 </body>
 
 </html>
