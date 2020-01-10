@@ -16,8 +16,9 @@
   line-height: 30px;
   color: #444444;
   border-spacing: 28px;
-  margin-left: -27px;
-  margin-top: -17px;
+  margin-bottom: 98px;
+  margin-top: 18px;
+  border-collapse: collapse;
 }
 
 .contact__table tbody {
@@ -25,13 +26,32 @@
   vertical-align: top;
 }
 
+.contact__email,
+.contact_address {
+  display: flex;
+  height: 60px;
+}
+
+.contact__row-title {
+  width: 75px;
+}
+
 .contact__row--address {
   padding-right: 36px;
+  margin-left: 29px;
 }
 
 .contact__map {
   width: 322px;
   height: 457px;
+}
+
+.contact__map-google {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  border: none;
+  z-index: 1;
 }
 
 .contact__button {
@@ -43,7 +63,7 @@
   font-weight: 700;
   line-height: 20px;
   text-align: center;
-  margin-top: 43px;
+  margin-top: 33px;
   text-transform: uppercase;
   box-sizing: border-box;
   padding-top: 15px;
@@ -86,12 +106,27 @@
     display: flex;
   }
 
+  .contact__email,
+  .contact_address {
+    display: flex;
+    margin-right: 50px;
+  }
+
   .contact__table {
     font-size: 17px;
     border-spacing: 25px;
     padding: 0;
-    margin: 0 auto;
+    margin-top: 49px;
     text-align: left;
+  }
+
+  .contact__row-title {
+    width: 75px;
+  }
+
+  .contact__row--address {
+    width: 219px;
+    margin-left: 0;
   }
 
   .contact__row-email:hover {
@@ -110,9 +145,14 @@
     vertical-align: top;
   }
 
+  .contact__map-google {
+    bottom: 151px;
+  }
+
   .contact__map {
     width: 768px;
     height: 457px;
+    margin-top: -18px;
   }
 
   .contact__button {
@@ -149,7 +189,6 @@
     top: 66px;
   }
 
-
   .contact__table tbody {
     display: table;
   }
@@ -159,25 +198,37 @@
     border-spacing: 25px;
     padding: 0;
     text-align: left;
-    margin-left: 123px;
-    margin-top: -4px;
+    margin-left: 173px;
+    margin-top: 46px;
   }
 
   .contact__row-text {
     width: 219px;
   }
 
-  .contact__map {
+  .contact__map-google {
     position: absolute;
+    bottom: 92px;
+    left: 526px;
+    border: none;
+    z-index: 1;
+    width: 525px;
+    height: 457px;
+  }
+
+  .contact__map {
+    position: relative;
     width: 525px;
     height: 457px;
     display: block;
-    top: 4px;
-    right: 0;
+    bottom: 375px;
+    left: 526px;
+    z-index: -1;
   }
 
   .contact__button {
-    margin-left: 174px;
-    margin-top: 29px;
+    position: absolute;
+    bottom: 87px;
+    left: 174px;
   }
 }

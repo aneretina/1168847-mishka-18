@@ -25,6 +25,7 @@
 }
 
 .catalog-list__info {
+  position: relative;
   height: 179px;
   width: 260px;
   border: 1px solid #ececec;
@@ -99,11 +100,15 @@
   margin-top: 25px;
 }
 
+.catalog-list__basket {
+  position: absolute;
+  display: block;
+  right: 27px;
+  bottom: 34px;
+}
+
 .catalog-list__cart {
   display: block;
-  margin-left: 212px;
-  margin-top: -13px;
-  margin-bottom: 62px;
 
   &:hover {
     fill: #63d1bb;
@@ -156,6 +161,7 @@
   }
 
   .catalog-list__info {
+    position: relative;
     height: 335px;
     width: 334px;
     border: 1px solid #ececec;
@@ -229,17 +235,8 @@
   }
 
   .catalog-list__basket {
-    position: relative;
-    display: block;
-    right: 70px;
-    top: -2px;
-  }
-
-  .catalog-list__cart {
-    position: absolute;
-    display: block;
-    top: 157px;
-    right: -36px;
+    right: 31px;
+    bottom: 36px;
   }
 
   .catalog-list__price--toy {
@@ -338,13 +335,7 @@
   }
 
   .catalog-list__basket {
-    top: -40px;
-    left: -87px;
-  }
-
-  .catalog-list__cart {
-    display: block;
-    top: 0;
-    right: -54px;
+    right: 33px;
+    bottom: 32px;
   }
 }
