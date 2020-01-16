@@ -3,13 +3,14 @@ var link = document.querySelector(".hit__order-btn");
 var shadow = document.querySelector(".modal__shadow");
 var catalogpopup = document.querySelector(".catalog-list__basket");
 
-
+if (link) {
 link.addEventListener("click", function(evt) {
  evt.preventDefault();
  popup.classList.add("modal__show");
  shadow.classList.add("modal__show");
  user.focus();
 });
+}
 
 catalogpopup.addEventListener("click", function(evt) {
  evt.preventDefault();
@@ -24,4 +25,9 @@ shadow.addEventListener("click", function (evt) {
 
 
 var nav = document.querySelector(".main-navigation");
-var open = document.querySelector(".main-navigation__toggle");
+var toggle = document.querySelector(".main-navigation__toggle");
+var close = document.querySelector(".main-navigation__close");
+var list = document.querySelector(".main-navigation__list");
+var body = document.querySelector(".body");
+
+body.classList.remove("no-js");
