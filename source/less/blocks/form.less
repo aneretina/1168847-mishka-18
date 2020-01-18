@@ -132,7 +132,7 @@
   content: "";
   position: absolute;
   left: -63px;
-  bottom: -7px;
+  bottom: -10px;
   height: 35px;
   width: 35px;
   border: 2px solid #444444;
@@ -192,8 +192,8 @@
   border: 0;
   display: block;
   color: rgba(68, 68, 68, 0.3);
-  width: 260px;
-  height: 48px;
+  width: 258px;
+  height: 50px;
   border-bottom: 2px solid #000000;
   font-size: 17px;
   line-height: 18px;
@@ -230,6 +230,10 @@
   position: relative;
 }
 
+.form__contact-label--email::after {
+  left: 82px;
+  width: 177px;
+}
 
 .form__contact-label--email::before {
   content: "";
@@ -240,7 +244,7 @@
   opacity: 0.2;
   height: 21px;
   width: 32px;
-  top: 37px;
+  top: 42px;
   right: 4px;
 }
 
@@ -477,7 +481,7 @@
 
   .form__person-list {
     width: 500px;
-    margin-top: -44px;
+    margin-top: -40px;
     margin-left: 169px;
     padding: 0;
   }
@@ -526,7 +530,7 @@
     font-size: 17px;
     line-height: 18px;
     font-weight: 700;
-    margin-bottom: 33px;
+    margin-bottom: 38px;
     margin-top: 21px;
   }
 
@@ -723,8 +727,8 @@
   }
 
   .form__person-list {
-    width: 730px;
-    margin-top: -45px;
+    width: 700px;
+    margin-top: -42px;
     padding: 0;
     margin-left: 177px;
   }
@@ -763,7 +767,7 @@
   }
 
   .form__contact-question {
-    margin-bottom: 33px;
+    margin-bottom: 37px;
     margin-top: 21px;
   }
 
@@ -779,7 +783,7 @@
 
   .form__contact-label--email::before {
     top: 4px;
-    left: 783px;
+    left: 780px;
   }
 
   .form__contact-label--tel::before {
@@ -797,15 +801,17 @@
     height: 142px;
     margin-left: 174px;
     margin-top: -37px;
+    box-sizing: border-box;
+    padding-top: 15px;
   }
 
   .form__obligatory-field {
-    margin-top: 53px;
+    margin-top: 55px;
     margin-right: 174px;
   }
 
   .form__button {
-    margin-top: -57px;
+    margin-top: -55px;
     margin-left: 174px;
   }
 }

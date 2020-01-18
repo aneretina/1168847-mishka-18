@@ -8,19 +8,21 @@ link.addEventListener("click", function(evt) {
  evt.preventDefault();
  popup.classList.add("modal__show");
  shadow.classList.add("modal__show");
- user.focus();
 });
 }
 
+if (catalogpopup) {
 catalogpopup.addEventListener("click", function(evt) {
  evt.preventDefault();
  popup.classList.add("modal__show");
  shadow.classList.add("modal__show");
- user.focus();
 });
+}
 
 shadow.addEventListener("click", function (evt) {
+  evt.preventDefault();
   popup.classList.remove("modal__show");
+  catalogpopup.classList.remove("modal__show");
 });
 
 
@@ -31,3 +33,19 @@ var list = document.querySelector(".main-navigation__list");
 var body = document.querySelector(".body");
 
 body.classList.remove("no-js");
+
+list.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  toggle.classList.add("menu-active");
+  close.classList.add("menu-active");
+});
+
+toggle.addEventListener("click", function (evt) {
+   evt.preventDefault();
+   body.classList.add("menu-active");
+});
+
+close.addEventListener("click", function (evt) {
+   evt.preventDefault();
+   body.classList.remove("menu-active");
+});
