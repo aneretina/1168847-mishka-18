@@ -415,6 +415,9 @@ body {
   .main-navigation__toggle {
     display: none;
   }
+  .main-navigation__close {
+    display: none;
+  }
   .site-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -427,7 +430,7 @@ body {
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin-left: -34px;
-    margin-top: -2px;
+    margin-top: 19px;
   }
   .site-list__item {
     width: 140px;
@@ -452,7 +455,7 @@ body {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    bottom: 132px;
+    bottom: 131px;
     right: 52px;
   }
   .user-list__item--search {
@@ -487,7 +490,7 @@ body {
   .main-navigation__delivery {
     position: absolute;
     right: 103px;
-    top: 29px;
+    top: 11px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -523,7 +526,7 @@ body {
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin-top: -86px;
-    margin-left: -51px;
+    margin-left: -35px;
   }
   .site-list__item {
     font-size: 17px;
@@ -710,7 +713,7 @@ body {
     text-align: center;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding-top: 168px;
+    padding-top: 155px;
   }
   .handwork__title br {
     display: none;
@@ -973,7 +976,7 @@ body {
     height: 404px;
     width: 333px;
     position: absolute;
-    right: 170px;
+    right: 52px;
     bottom: 0;
   }
   .hit__price {
@@ -1004,7 +1007,7 @@ body {
     margin: 0 auto;
     padding-top: 96px;
     width: 1150px;
-    height: 655px;
+    min-height: 655px;
   }
   .hit__title {
     position: relative;
