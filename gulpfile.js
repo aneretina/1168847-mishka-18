@@ -63,9 +63,9 @@ gulp.task("server", function () {
   server.init({
     server: "build/"
   });
-gulp.watch("source/less/**/*.less", gulp.series("css"));
-gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "refresh"));
-gulp.watch("source/*.html", gulp.series("html", "refresh"));
+  gulp.watch("source/less/**/*.less", gulp.series("css"));
+  gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "refresh"));
+  gulp.watch("source/*.html", gulp.series("copy", "refresh"));
  });
 
 
@@ -78,7 +78,8 @@ gulp.task("clean", function () {
       "source/fonts/**/*.{woff,woff2}",
       "source/img/**",
       "source/js/**",
-      "source/*.ico"
+      "source/*.ico",
+      "source/*.html"
     ], {
       base: "source"
 })
