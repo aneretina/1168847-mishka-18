@@ -7,14 +7,13 @@
 .footer__sm-list {
   display: flex;
   list-style: none;
-  margin-top: 30px;
   justify-content: center;
 }
 
 .footer__sm-item {
   display: block;
-  margin-right: 41px;
-  margin-top: 40px;
+  margin-right: 42px;
+  margin-top: 27px;
 }
 
 .footer__copyright {
@@ -39,20 +38,67 @@
   margin-right: 38px;
 }
 
+.footer__copyright-svg:hover {
+  fill: #46c1ae;
+}
+
+.footer__copyright-svg:active {
+  fill: #46c1ae;
+  opacity: 0.3;
+}
+
+
 .footer__logo {
   display: none;
 }
 
+.footer__logo:hover,
+.footer__sm-svg:hover {
+  fill: #46c1ae;
+}
+
+.footer__logo:active,
+.footer__sm-svg:active {
+  opacity: 0.3;
+}
+
+.footer__copyright-text:hover {
+  color: #000000;
+}
+
+.footer__copyright-text:hover .footer__copyright-svg {
+  fill: #46c1ae;
+}
+
+.footer__copyright-text:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.footer__copyright-text:active .footer__copyright-svg {
+  fill: #46c1ae;
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .footer {
+    margin-top: 18px;
     width: 768px;
     height: 143px;
+  }
+
+  .footer-catalog {
+    margin-top: 33px;
+  }
+
+  .footer-form {
+    margin-top: 0;
   }
 
   .footer__social-media {
     display: flex;
     justify-content: center;
-    margin-top: -94px;
+    margin-top: -67px;
   }
 
   .footer__copyright {
@@ -66,26 +112,26 @@
   }
 
   .footer__copyright-svg {
-    margin-left: 151px;
-    margin-top: -42px;
+    margin-left: 102px;
+    margin-top: -44px;
   }
 
   .footer__logo {
     display: block;
     padding-top: 50px;
-    padding-left: 50px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .footer {
     width: 1150px;
+    margin-top: 16px;
   }
 
   .footer__social-media {
     display: flex;
     justify-content: center;
-    margin-top: -94px;
+    margin-top: -67px;
   }
 
   .footer__copyright {
@@ -99,12 +145,20 @@
   }
 
   .footer__copyright-svg {
-    margin-left: 155px;
-    margin-top: -38px;
+    margin-left: 104px;
+    margin-top: -40px;
   }
 
   .footer__logo {
     display: block;
     padding-top: 50px;
+  }
+
+  .footer-catalog {
+    margin-top: 2px;
+  }
+
+  .footer-form {
+    margin-top: -6px;
   }
 }

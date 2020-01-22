@@ -1,16 +1,15 @@
-
 .handwork {
   width: 320px;
-  margin-top: 30px;
+  margin: 0 auto;
+  margin-top: -7px;
   padding: 0;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center -23px;
-  margin-left: -32px;
+  background-position: center -17px;
 
   @media (min-resolution: @retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
-    background-size: 575px auto;
+    background-size: 562px auto;
   }
 }
 
@@ -21,16 +20,16 @@
   line-height: 30px;
   color: #010000;
   box-sizing: border-box;
-  padding-top: 62px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-top: 71px;
   text-align: center;
 }
 
 .handwork__list {
-  margin-top: 128px;
+  margin-top: 124px;
   list-style: none;
   padding: 0;
+  width: 320px;
+  margin-left: -31px;
 }
 
 .handwork__link {
@@ -63,26 +62,38 @@
 .handwork__link--interior::before {
   content: "";
   position: absolute;
-  opacity: 0.2;
+  opacity: 0.5;
   background: url("../img/icon-interior.svg") center center no-repeat;
   width: 40px;
   height: 62px;
-  left: 247px;
-  top: 13px;
+  left: 246px;
+  top: 19px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .handwork__link--toy::before {
   content: "";
   position: absolute;
-  opacity: 0.2;
+  opacity: 0.5;
   background: url("../img/icon-toy.svg") center center no-repeat;
   width: 60px;
   height: 60px;
   left: 237px;
-  top: 13px;
+  top: 19px;
 }
 
 @media (min-width: @tablet-width) {
+  .main-index {
+    overflow: hidden;
+  }
+
   .handwork {
     position: relative;
     margin: 0 auto;
@@ -92,7 +103,7 @@
     background-image: url("../img/hero-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center -26px;
-    z-index: -1;
+    z-index: initial;
 
     @media (min-resolution: @retina-dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
@@ -111,33 +122,35 @@
     height: 24px;
     width: 100%;
     bottom: -8px;
+    z-index: 1;
   }
 
   .handwork__title {
-    width: 500px;
+    width: 669px;
     font-size: 43px;
     line-height: 50px;
     text-align: center;
     box-sizing: border-box;
-    padding-top: 153px;
-    margin-left: 134px;
+    padding-top: 155px;
+  }
+
+  .handwork__title br {
+    display: none;
   }
 
   .handwork__list {
     width: 772px;
     display: flex;
-    justify-content: center;
-    margin-top: 319px;
+    margin-top: 369px;
+    margin-left: 0;
   }
 
   .handwork__unit {
     display: block;
-    font-size: 20px;
-    line-height: 30px;
     width: 334px;
     margin: 0;
     padding: 0;
-    z-index: -1;
+    z-index: 0;
   }
 
   .handwork__link {
@@ -145,13 +158,39 @@
     z-index: 1;
   }
 
+  .handwork__link:hover {
+    height: 126px;
+    margin-top: -5px;
+  }
+
+  .handwork__link--interior:hover::before,
+  .handwork__link--toy:hover::before {
+    opacity: 0.7;
+  }
+
+  .handwork__link--interior:active::before,
+  .handwork__link--toy:active::before {
+    opacity: 0.3;
+  }
+
+  .handwork__link:active {
+    height: 126px;
+    margin-top: -5px;
+  }
+
   .handwork__link p {
+    font-size: 20px;
+    line-height: 30px;
     width: 111px;
     display: block;
     box-sizing: border-box;
-    padding-top: 31px;
-    padding-left: 37px;
+    padding-top: 29px;
+    padding-left: 33px;
     padding-bottom: 23px;
+  }
+
+  .handwork__link p:active {
+    opacity: 0.3;
   }
 
   .handwork__link--interior::before {
@@ -166,16 +205,21 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-index {
+    overflow: hidden;
+  }
+
   .handwork {
     display: block;
     width: 1150px;
     background-image: url("../img/hero-desktop@1x.jpg");
     background-repeat: no-repeat;
     bottom: 35px;
+    z-index: initial;
 
     @media (min-resolution: @retina-dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
-      background-size: 1144px auto;
+      background-size: 1188px auto;
     }
   }
 
@@ -185,14 +229,13 @@
     line-height: 57px;
     box-sizing: border-box;
     padding-top: 153px;
-    margin-left: 218px;
+    margin-left: 169px;
   }
 
   .handwork__list {
     width: 1050px;
     display: flex;
-    margin-top: 364px;
-    margin-left: 48px;
+    margin-top: 358px;
   }
 
   .handwork__unit {
@@ -202,19 +245,35 @@
     width: 50%;
     height: 119px;
     justify-content: space-between;
+    z-index: 0;
   }
 
   .handwork__link {
     margin: 0;
   }
 
+  .handwork__link:hover {
+    height: 126px;
+    margin-top: -5px;
+  }
+
+  .handwork__link:active {
+    height: 126px;
+    margin-top: -5px;
+  }
+
+  .handwork__link p {
+    padding-top: 27px;
+    padding-left: 35px;
+  }
+
   .handwork__link--interior::before {
-    top: 24px;
+    top: 30px;
     left: 450px;
   }
 
   .handwork__link--toy::before {
-    top: 28px;
+    top: 30px;
     left: 431px;
   }
 }

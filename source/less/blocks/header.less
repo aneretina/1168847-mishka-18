@@ -5,17 +5,25 @@
 .main-header__logo {
   display: block;
   background-color: #ffffff;
-  height: 35px;
-  margin-left: 87px;
-  margin-top: 26px;
-  width: 62px;
+  margin-left: 86px;
+  margin-top: 23px;
+}
+
+.main-header__logo:hover {
+  opacity: 0.6;
+}
+
+.main-header__logo:active {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
   .main-header__logo {
-    height: 50px;
-    width: 115px;
-    margin-left: 47px;
+    margin-left: 0;
+    margin-top: 23px;
+    width: 120px;
+    position: relative;
+    z-index: 2;
   }
 
   .main-header__logo-icon {

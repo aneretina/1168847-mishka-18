@@ -1,6 +1,7 @@
 .company-info {
   width: 320px;
-  margin-top: 25px;
+  margin: 0 auto;
+  margin-top: 73px;
 }
 
 .company-info__list {
@@ -12,6 +13,10 @@
   list-style: none;
 }
 
+.company-info__list--2 {
+  margin-top: -7px;
+}
+
 .company-info__title {
   font-size: 25px;
   font-weight: 700;
@@ -20,6 +25,7 @@
 }
 
 .company-info__feature {
+  margin-top: -1px;
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
@@ -29,20 +35,28 @@
 
 .company-info__feature p {
   display: block;
-  width: 240px;
+  width: 220px;
   margin-bottom: 25px;
+}
+
+.company-info__feature--short p {
+  width: 194px;
+}
+
+.company-info__feature--long p {
+  width: 280px;
 }
 
 .company-info__svg {
   margin-top: 10px;
-  margin-left: 5px;
+  margin-left: 6px;
   fill: #63d1bb;
 }
 
 @media (min-width: @tablet-width) {
   .company-info {
     width: 768px;
-    margin-left: 50px;
+    margin-top: 123px;
   }
 
   .company-info__title {
@@ -77,14 +91,15 @@
   }
 
   .company-info__feature p {
+    width: 241px;
     margin-top: 16px;
     margin-left: 2px;
     margin-right: 0;
     margin-bottom: 0;
   }
 
-  .company-info__feature--flower p {
-    width: 205px;
+  .company-info__feature--short p {
+    width: 213px;
   }
 
   .company-info__feature--2 p {
@@ -95,16 +110,14 @@
 @media (min-width: @desktop-width) {
   .company-info {
     width: 1150px;
-    margin-top: 188px;
-    margin-left: 226px;
+    margin-top: 62px;
   }
 
   .company-info__title {
     font-size: 53px;
     line-height: 57px;
     margin-bottom: 0;
-    margin-top: 54px;
-    margin-left: -6px;
+    margin-left: 169px;
   }
 
   .company-info__wrapper {
@@ -114,14 +127,14 @@
   }
 
   .company-info__list {
-    width: 50%;
     margin: 0;
     padding: 0;
     justify-content: space-around;
+    margin-left: 175px;
   }
 
   .company-info__list--2 {
-    margin-left: -225px;
+    margin-left: 15px;
   }
 
   .company-info__feature {
