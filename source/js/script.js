@@ -1,4 +1,4 @@
-var popup = document.querySelector(".modal__login");
+var popup = document.querySelector(".modal--login");
 var link = document.querySelector(".hit__order-btn");
 var shadow = document.querySelector(".modal__shadow");
 var catalogpopup = document.querySelector(".catalog-list__basket");

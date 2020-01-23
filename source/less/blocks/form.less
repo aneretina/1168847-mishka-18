@@ -543,7 +543,6 @@
     position: relative;
   }
 
-
   .form__contact-label--email::before {
     content: "";
     position: absolute;
@@ -564,6 +563,11 @@
     width: 24px;
     top: -3px;
     left: 617px;
+  }
+
+  .form__contact-label--email:hover::before,
+  .form__contact-label--tel:hover::before {
+    box-shadow: 2px #62d1ba;
   }
 
   .form__contact-field {
