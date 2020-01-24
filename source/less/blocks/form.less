@@ -6,7 +6,7 @@
   background-color: #f1f1f1;
   text-align: center;
   height: 177px;
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
   margin-top: 12px;
   box-sizing: border-box;
@@ -335,7 +335,7 @@
     font-size: 43px;
     line-height: 50px;
     height: 226px;
-    width: 768px;
+    width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
     padding-top: 88px;
@@ -350,7 +350,7 @@
     content: "";
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
-    background-size: 768px 24px;
+    background-size: 100% 24px;
     background-position-x: -38px;
     height: 24px;
     width: 100%;
@@ -565,9 +565,14 @@
     left: 617px;
   }
 
+  .form__contact-label--tel:hover::before,
+  .form__contact-label--tel:active::before {
+    background-image: url("../img/icon-phone-hover.svg");
+  }
+
   .form__contact-label--email:hover::before,
-  .form__contact-label--tel:hover::before {
-    box-shadow: 2px #62d1ba;
+  .form__contact-label--email:active::before {
+    background-image: url("../img/icon-mail-hover.svg");
   }
 
   .form__contact-field {
@@ -626,7 +631,7 @@
     font-size: 53px;
     line-height: 57px;
     height: 255px;
-    width: 1150px;
+    width: 100%;
     padding-top: 104px;
   }
 
@@ -636,7 +641,7 @@
     content: "";
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
-    background-size: 1150px 34px;
+    background-size: 100% 34px;
     background-position-x: -56px;
     height: 34px;
     width: 100%;
