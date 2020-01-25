@@ -1,0 +1,81 @@
+.main-catalog {
+  width: 320px;
+  margin: 0 auto;
+  display: block;
+}
+
+.main-catalog__header {
+  font-size: 27px;
+  line-height: 30px;
+  color: #000000;
+  background-color: #f1f1f1;
+  text-align: center;
+  height: 177px;
+  width: 100%;
+  margin-top: 12px;
+  margin-left: 0;
+  box-sizing: border-box;
+  padding-top: 75px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-catalog {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .main-catalog__header {
+    position: relative;
+    margin: 0 auto;
+    font-size: 43px;
+    line-height: 50px;
+    height: 240px;
+    width: 100%;
+    bottom: 15px;
+    box-sizing: border-box;
+    padding-top: 107px;
+    z-index: -1;
+  }
+
+  .main-catalog__header::after {
+    content: "";
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-size: 768px 24px;
+    background-position-x: -38px;
+    width: 100%;
+    height: 24px;
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-catalog {
+    width: 1150px;
+    margin: 0 auto;
+    margin-top: 9px;
+  }
+
+  .main-catalog__header {
+    font-size: 53px;
+    line-height: 57px;
+    height: 264px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 104px;
+  }
+
+  .main-catalog__header::after {
+    background-repeat: repeat-x;
+    background-size: 1150px 34px;
+    background-position-x: -59px;
+    width: 100%;
+    height: 34px;
+    position: absolute;
+    bottom: -21px;
+    left: 0;
+  }
+}

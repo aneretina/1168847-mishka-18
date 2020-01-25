@@ -1,6 +1,6 @@
 var popup = document.querySelector(".modal--login");
 var link = document.querySelector(".hit__order-btn");
-var shadow = document.querySelector(".modal__shadow");
+var shadow = document.querySelector(".shadow");
 var catalogpopup = document.querySelector(".catalog-list__basket");
 
 if (link) {
