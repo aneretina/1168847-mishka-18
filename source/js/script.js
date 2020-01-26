@@ -28,14 +28,17 @@ shadow.addEventListener("click", function (evt) {
 
 var nav = document.querySelector(".main-navigation");
 var toggle = document.querySelector(".main-navigation__toggle");
-var close = document.querySelector(".main-navigation__close");
 var body = document.querySelector(".body");
 
 body.classList.remove("no-js");
 
+
 toggle.addEventListener("click", function (evt) {
+
   evt.preventDefault();
   body.classList.add("menu-active");
+  toggle.classList.add("menu-active");
+  toggle.classList.add("menu-active--close");
 });
 
 close.addEventListener("click", function (evt) {
