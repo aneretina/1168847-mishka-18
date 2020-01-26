@@ -71,26 +71,8 @@
     display: block;
   }
 
-  .menu-active .main-navigation__toggle {
+  .main-navigation--closed .main-navigation__list {
     display: none;
-  }
-
-  .menu-active .main-navigation__list {
-    display: block;
-  }
-
-  .menu-active-close {
-    background-image: url("../img/icon-menu-close.svg");
-    background-color: transparent;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: -35px;
-    right: 69px;
-    width: 18px;
-    height: 17px;
-    border: 0;
-    cursor: pointer;
   }
 
   .main-navigation__user-svg--loupe {
@@ -127,6 +109,35 @@
     background-color: #000000;
     box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
     cursor: pointer;
+  }
+
+  .main-navigation--opened .main-navigation__toggle {
+    top: -49px;
+    right: auto;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 24px;
+      left: 18px;
+      width: 20px;
+      height: 2px;
+      background-color: #000000;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  .main-navigation--opened .main-navigation__list {
+    display: block;
   }
 }
 

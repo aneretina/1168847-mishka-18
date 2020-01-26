@@ -32,18 +32,15 @@ var body = document.querySelector(".body");
 
 body.classList.remove("no-js");
 
-
-toggle.addEventListener("click", function (evt) {
-
-  evt.preventDefault();
-  body.classList.add("menu-active");
-  toggle.classList.add("menu-active");
-  toggle.classList.add("menu-active--close");
-});
-
-close.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  body.classList.remove("menu-active");
+  toggle.addEventListener("click", function (evt) {
+if (nav.classList.contains('main-navigation--closed')) {
+    evt.preventDefault();
+    nav.classList.remove("main-navigation--closed");
+    nav.classList.add("main-navigation--opened");
+  } else {
+    nav.classList.add('main-navigation--closed');
+    nav.classList.remove('main-navigation--opened');
+  }
 });
 
 svg4everybody();
