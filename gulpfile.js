@@ -63,7 +63,7 @@ gulp.task("server", function () {
   server.init({
     server: "build/"
   });
-  gulp.watch("source/less/**/*.less", gulp.series("css"));
+  gulp.watch("source/less/**/*.less", gulp.series("css", "refresh"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "refresh"));
   gulp.watch("source/*.html", gulp.series("copy", "refresh"));
  });
