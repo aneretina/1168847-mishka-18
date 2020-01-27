@@ -129,10 +129,12 @@
     &::before {
       transform: rotate(45deg);
       box-shadow: none;
+      left: 0;
     }
 
     &::after {
       transform: rotate(-45deg);
+      left: 0;
     }
   }
 
@@ -243,7 +245,7 @@
 @media (min-width: @desktop-width) {
   .main-navigation {
     display: flex;
-    width: 1150px;
+    width: 100%;
     margin-top: 10px;
   }
 
@@ -321,7 +323,7 @@
 
   .main-navigation__delivery {
     position: absolute;
-    right: 101px;
+    right: 0;
     top: 0;
     display: block;
     font-size: 15px;
